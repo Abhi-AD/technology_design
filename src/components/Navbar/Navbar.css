@@ -1,7 +1,7 @@
 .menu-link:active,
 .menu-link:focus,
 .menu-link:hover {
-     color: #0606f9;
+     color: var(--main-color);
      background-color: #edecec;
 }
 
@@ -61,7 +61,7 @@
 .technology__navbar-menu_container button {
      padding: 0.5rem 1rem;
      color: #fff;
-     background: #0000FF;
+     background: var(--main-color);
      font-family: var(--font-family);
      font-weight: 500;
      font-size: 18px;
@@ -107,7 +107,7 @@
      display: none;
 }
 
-@media screen and (max-width: 1050px) {
+@media screen and (max-width: 750px) {
      .technology__navbar-links_container {
           display: none;
      }
@@ -117,13 +117,13 @@
      }
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 500px) {
      .technology__navbar {
           padding: 2rem 4rem;
      }
 }
 
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 350px) {
      .technology__navbar {
           padding: 2rem;
      }

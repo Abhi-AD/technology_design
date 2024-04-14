@@ -1,0 +1,92 @@
+
+.brand__padding {
+     padding: 1rem 15rem;
+}
+
+.brand__margin {
+     margin: 4rem 6rem;
+}
+.technology__brand {
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: center;
+     align-items: center;
+}
+
+.container{
+     margin-bottom: 2%;
+}
+.title {
+     text-align: center;
+     font-size: 2.5rem;
+     line-height: 56px;
+     font-weight: 700;
+     margin-left: 10%;
+     font-family: var(--font-family);
+}
+
+.plus {
+     color: var(--main-color);
+}
+
+.fs-lead {
+     text-align: center;
+     font-size: 1.375rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.image-container {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+}
+
+.image-row {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+img{
+     max-width: 100%;
+     height: auto;
+     display: block;
+     border-style: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 768px){
+     .fs-lead{
+          font-size: 1.25rem;
+          line-height: 28px;
+          letter-spacing: 0;
+     }
+}
+
+
+
+
+
