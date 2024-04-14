@@ -11,7 +11,7 @@ const Header = () => {
   }, []);
 
   return (
-    <div className="technology__header section__padding" id="home">
+    <div className="technology__header section__padding">
       <div className="technology__header-content">
         <h1 className="gradient__text">Innovate better,<br />
           <span>faster.</span>
