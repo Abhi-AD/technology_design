@@ -1,15 +1,14 @@
 import React from 'react'
 
-import { Navbar, Brand } from './components/index'
-import { Header } from './containers/index'
+import { Navbar } from './components/index'
 import './App.css'
+import Home from './page/Home/Home'
 
 const App = () => {
      return (
           <div className='App'>
                <Navbar />
-               <Header />
-               <Brand />
+               <Home />
           </div>
      )
 }
