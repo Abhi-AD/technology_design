@@ -83,11 +83,22 @@ ul {
 }
 
 .footer__block ul li {
+     display: flex;
      list-style: none;
      padding: .5rem 10px;
+     justify-content: center;
+     flex-direction: row;
+     align-items: center;
+     text-align: center;
+}
+.link_footer{
+     flex-direction: row;
+     flex: 1;
+     display: flex;
+     padding: 10px;
 }
 
-.icon {
+.icons {
      color: #ffff;
      font-size: 24px;
      margin-right: 10%;
