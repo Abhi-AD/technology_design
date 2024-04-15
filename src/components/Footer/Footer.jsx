@@ -6,7 +6,7 @@ import { FaCodeBranch, FaFacebook, FaGraduationCap, FaInstagram, FaLinkedin, FaP
 const Footer = () => {
     return (
         <div className='footer'>
-            <div className="container">
+            <div className="container footer1">
                 <div className="footer_subscription">
                     <span className='title_sub'>Stay in the loop</span>
                 </div>

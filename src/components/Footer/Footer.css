@@ -12,7 +12,7 @@
      padding: 0 10%;
 }
 
-.container {
+.footer1 {
      padding-right: .75rem;
      padding-left: .75rem;
      margin-right: auto;
@@ -129,7 +129,8 @@ ul {
 
 .footer__copyright img {
      max-width: 100%;
-     height: auto;
+     height: 100px;
+     width: 100px;
      display: block;
 }
 
