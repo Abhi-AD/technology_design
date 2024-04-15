@@ -3,14 +3,15 @@ import { RiMenu3Line, RiCloseLine } from 'react-icons/ri'
 import './Navbar.css';
 import logo from '../../assests/logo.jpg'
 import Button from './Button';
+import { Link } from 'react-router-dom';
 
 const Menu = () => (
      <>
-          <p><a className='menu-link' href="#home">Home</a></p>
-          <p><a className='menu-link' href="#services">Services</a></p>
-          <p><a className='menu-link' href="#join">Join</a></p>
-          <p><a className='menu-link' href="#blog">Blog</a></p>
-          <p><a className='menu-link' href="#about">About us</a></p>
+          <p><Link className='menu-link' to="/">Home</Link></p>
+          <p><Link className='menu-link' to="/services">Services</Link></p>
+          <p><Link className='menu-link' to="/join">Join</Link></p>
+          <p><Link className='menu-link' to="/blog">Blog</Link></p>
+          <p><Link className='menu-link' to="/about">About us</Link></p>
      </>
 )
 
@@ -35,16 +36,16 @@ const Navbar = () => {
                          )}
                     </div>
                     <div className='technology__navbar-links_logo'>
-                         <a href='#home'><img src={logo} alt='logo' /></a>
+                         <Link to='/'><img src={logo} alt='logo' /></Link>
                     </div>
                     <div className='technology__navbar-links_container'>
                          <Menu />
                     </div>
                </div>
                <div className='technology__navbar-contact'>
-                    <a href='#contact'>
+                    <Link to='/contact'>
                          <Button />
-                    </a>
+                    </Link>
                </div>
           </div >
      )
