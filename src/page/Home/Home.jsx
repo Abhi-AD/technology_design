@@ -1,6 +1,6 @@
 import React from 'react'
 import {  Brand } from '../../components/index'
-import { Header } from '../../containers/index'
+import { Header,Parnter } from '../../containers/index'
 import CTA from '../../components/CTA/CTA'
 
 const Home = () => {
@@ -8,6 +8,7 @@ const Home = () => {
           <div className='App'>
                <Header />
                <Brand />
+               <Parnter />
                <CTA />
           </div>
      )
