@@ -1,11 +1,10 @@
-.line{
+.line {
      border-color: beige;
      height: 1px;
-     margin-bottom: 5%;
-     margin-top: 5%;
      width: 100%;
      text-align: center;
 }
+
 .footer {
      background-color: var(--color-footer);
      padding-bottom: 3.75rem;
@@ -19,9 +18,16 @@
      margin-left: auto;
 }
 
+/* subscription */
 .footer_subscription {
-     padding: 2.5rem 0;
+     display: flex;
+     justify-content: center;
      text-align: center;
+     align-items: center;
+     padding: 2.5rem;
+     margin: 0 10% 0;
+     flex-direction: row;
+     flex: 1;
 }
 
 
@@ -32,20 +38,65 @@
      color: var(--main-color);
 }
 
-.sub-form {
-     margin: 0 auto;
-     max-width: 300px;
+.sub_form {
+     padding: 20px 100px 0 20px;
+     margin: 0;
+     width: 4%;
+     gap: 25px;
+     display: flex;
+     flex: 1;
 }
 
+input[type='email']::placeholder {
+     color: #fff;
+     text-align: left;
+}
+
+.sub_form input {
+     background-color: #575555;
+     color: #828282;
+    border-color: #d01717;
+    border-style: solid;
+     margin: 0 0 20px 0;
+     border: none;
+     border-radius: 0 !important;
+     padding: 1rem 0;
+     width: 100%;
+}
+
+
+.sub_form button {
+     float: left;
+     height: 100%;
+     background-color: var(--color-bg);
+     color: var(--color-text);
+     width: 230px !important;
+     border: 0;
+}
+
+.sub_form input,
+.sub_form button {
+     height: 40px;
+}
+
+.sub_form button:hover {
+     color: #fff;
+     background: var(--main-color);
+}
+
+
+
+
+/* menu */
 .footer__menu .col-lg-3 {
      width: 25%;
      float: left;
      padding: 2%;
 }
 
-.footer_logo{
-     max-width: 100%;
-     height: auto;
+.footer_logo {
+     height: 36px;
+     width: 188px;
      display: block;
 }
 
@@ -91,7 +142,8 @@ ul {
      align-items: center;
      text-align: center;
 }
-.link_footer{
+
+.link_footer {
      flex-direction: row;
      flex: 1;
      display: flex;
@@ -114,6 +166,7 @@ ul {
      text-align: center;
      display: flex;
      align-items: center;
+     justify-content: center;
 }
 
 .footer__copyright ul {
@@ -132,16 +185,17 @@ ul {
      font-weight: 700;
      font-size: 1rem;
      line-height: 24px;
-     margin-right: 10%;
-     margin-left: 10%;
+     margin-right: 25%;
+     margin-left: 25%;
+     text-align: center;
+
 
 }
 
 
-.footer__copyright img {
+.footer_button {
      max-width: 100%;
-     height: 100px;
-     width: 100px;
+     height: 60px;
+     width: 60px;
      display: block;
 }
-
