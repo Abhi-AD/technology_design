@@ -1,10 +1,11 @@
 import React from 'react'
+import './Contact.css'
+import Location from '../../containers/Location/Location'
 
 const Contact = () => {
   return (
-    <div>
-      Conatct
-    </div>
+
+      <Location />
   )
 }
 

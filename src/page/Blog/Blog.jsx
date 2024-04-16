@@ -71,8 +71,6 @@ const Blog = () => {
               </div>
             </div>
           </div>
-        </div>
-        <div className="col_blog">
           <div className="card_blog">
             <img src={Blog4} alt="Blog3" />
             <div className="post_card__infoys">

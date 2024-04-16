@@ -13,10 +13,11 @@
 }
 
 .col_blog {
-     padding: 2%;
      display: flex;
      flex-wrap: wrap;
-     gap: 2rem;
+     display: grid;
+     grid-template-columns: repeat(3, 1fr);
+     gap: 30px;
 }
 
 
