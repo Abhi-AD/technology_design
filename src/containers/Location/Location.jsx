@@ -39,12 +39,9 @@ const Location = () => {
                          <img src={Pune} alt="Pune" />
                          <div className="post-card_location">
                               <h3>Pune</h3>
-                              <p>Office No.: 03-122, WeWorkEleven West, Pan Card Club Road
-                                   Baner, Pune 411045</p>
+                              <p>Office No.: 03-122, WeWorkEleven West, Pan Card Club Road Baner, Pune 411045</p>
                          </div>
                     </div>
-
-
                </div>
           </div>
      )
