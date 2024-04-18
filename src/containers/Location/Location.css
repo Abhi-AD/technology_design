@@ -1,5 +1,5 @@
 .location {
-     background-color: #F7F8FB;
+     background-color: var(--bg-color);
      padding: 1rem 10rem;
 }
 

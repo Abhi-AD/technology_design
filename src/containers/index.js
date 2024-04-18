@@ -1,2 +1,6 @@
-export{default as Header} from './Header/Header'
-export{default as Parnter} from './Parnter/Parnter'
+export { default as Header } from './Header/Header'
+export { default as Parnter } from './Parnter/Parnter'
+export { default as Panel } from './Panel/Panel'
+export { default as People } from './People/People'
+export { default as World } from './World/World'
+export { default as BOx } from './Box/BOx'

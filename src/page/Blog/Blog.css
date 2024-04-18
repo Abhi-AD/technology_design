@@ -29,7 +29,7 @@
 
 .BlogHeader {
      padding: 2rem;
-     background-color: #f7f8fb;
+     background-color: var(--bg-color);
      width: 50%;
      height: 100%;
      border-radius: 8px;
@@ -90,7 +90,7 @@
 
 .card_blog {
      flex: 1;
-     background-color: #f7f8fb;
+     background-color: var(--bg-color);
      border-radius: 8px;
 
 }

@@ -1,5 +1,5 @@
 .parnterbg {
-     background-color: #F7F8FB;
+     background-color: var(--bg-color);
      justify-content: center;
      align-items: center;
      /* padding: 15% 15% 15% 15%; */
@@ -44,7 +44,7 @@
 }
 .parnter_icon{
      background-color: var(--main-color);
-     color: #F7F8FB;
+     color: var(--bg-color);
      padding: 1rem;
      font-size: 1rem;
      text-transform: capitalize;
