@@ -1,12 +1,14 @@
 import React from 'react'
 import './About.css'
-import { BOx, Panel, People, World } from '../../containers/index'
+import { BOx, Hero, Mission, Panel, People, World } from '../../containers/index'
 import { Connect } from '../../components/index'
 
 const About = () => {
      return (
           <div>
                <div className='panel'>
+                    <Hero />
+                    <Mission />
                     <Panel />
                     <People />
                     <World />

@@ -2,6 +2,7 @@ import React, { useEffect, useRef } from 'react';
 import './Header.css';
 import src from '../../assests/video/Header.mp4';
 import { FaArrowRight } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
   const videoRef = useRef(null);
@@ -18,8 +19,8 @@ const Header = () => {
         </h1>
         <p>We help businesses imagine and create the digital experiences of tomorrow. We succeed together, through the fusion of startup agility, enterprise standards, and world-class engineering.</p>
         <div className='technology__header-link-btn'>
-          <a href="#contact" className='centered-link'><span>Build With us</span><FaArrowRight className='arrow-icon' /></a>
-          <a href="#join" className='centered-link'><span>Join us</span><FaArrowRight className='arrow-icon' /></a>
+          <Link to="/contact" className='centered-link'><span>Build With us</span><FaArrowRight className='arrow-icon' /></Link>
+          <Link to="/join" className='centered-link'><span>Join us</span><FaArrowRight className='arrow-icon' /></Link>
         </div>
 
       </div>

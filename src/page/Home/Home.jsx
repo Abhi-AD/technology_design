@@ -1,5 +1,5 @@
 import React from 'react'
-import {  Brand } from '../../components/index'
+import {  Brand, Connect } from '../../components/index'
 import { Header,Parnter } from '../../containers/index'
 import CTA from '../../components/CTA/CTA'
 
@@ -10,6 +10,7 @@ const Home = () => {
                <Brand />
                <Parnter />
                <CTA />
+               <Connect />
           </div>
      )
 }
