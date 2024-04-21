@@ -1,71 +1,84 @@
 .parnterbg {
      background-color: var(--bg-color);
+     display: flex;
      justify-content: center;
      align-items: center;
-     /* padding: 15% 15% 15% 15%; */
-     padding: 1rem 20rem;
+     padding: 2rem;
+}
 
+.parnter_content {
      display: flex;
-     flex: 1;
+     justify-content: space-between;
+     align-items: center;
+     max-width: 1200px;
 }
 
 .parnter {
-     display: block;
-     width: 350px;
-     height: 629px;
+     width: 45%;
+     max-width: 400px;
 }
 
-
-/* right */
-.parnter_infos{
+.parnter_infos {
+     width: 45%;
      padding-left: 1.5rem;
-     margin: 3rem 0;
+     text-align: center;
 }
-.parnter_info-title{
+
+.parnter_info-title {
      font-weight: 700;
      text-transform: uppercase;
      display: inline-block;
 }
-.parnter_info-header{
+
+.parnter_info-header {
      font-weight: 700;
      font-size: 2.5rem;
      line-height: 40px;
+     margin-bottom: 1rem;
 }
-.title_info{
+
+.title_info {
      font-size: 1.375rem;
-     letter-spacing: 0;
-     line-height: 20px;
-     margin-top: 1rem !important;
-     margin-bottom: 1rem !important;
+     margin-top: 1rem;
+     margin-bottom: 1rem;
 }
-.des_parnter{
+
+.des_parnter {
      font-size: 1rem;
-     line-height: 18px;
+     margin-bottom: 2rem;
 }
-.parnter_icon{
+
+.parnter_icon {
      background-color: var(--main-color);
      color: var(--bg-color);
      padding: 1rem;
      font-size: 1rem;
      text-transform: capitalize;
-     margin-top: 2.5rem !important;
      width: 10rem;
-     align-items: center;
-     justify-content: center;
      border-radius: 8px;
      text-align: center;
-     flex-direction: row;
-     flex: 1;
      display: flex;
+     align-items: center;
+     justify-content: center;
 }
 
 
+@media (max-width: 768px) {
+     .parnter_content {
+          flex-direction: column;
+          align-items: center;
+     }
 
+     .parnter {
+          width: 50%;
+          max-width: 50%;
+          margin-bottom: 2rem;
+     }
 
-
-
-
-
-
-
-
+     .parnter_infos {
+          width: 80%;
+          max-width: 80%;
+          margin-bottom: 2rem;
+          justify-content: center;
+     }
+}

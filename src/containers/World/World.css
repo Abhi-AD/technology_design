@@ -1,9 +1,7 @@
 .world {
      gap: 1.5rem;
      display: flex;
-     /* grid-template-columns: repeat(3, 1fr); */
-     gap: 30px;
-     flex-wrap: wrap;
+     margin-top: -10%;
 }
 
 .world img {

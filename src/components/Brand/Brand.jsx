@@ -10,18 +10,14 @@ const Brand = () => {
                     <p class="fs-lead">At Leapfrog, we have had the privilege of partnering with some of the most innovative and forward-thinking companies in the tech industry. From big companies to startups that hope to be big one day, they trust us with the expertise and support they need to bring their ideas to life.</p>
                </div>
                <div className="image-container ">
-                    <div className="image-row top-row">
-                         <img src={microsoft} alt='microsoft' />
-                         <img src={laudio} alt='laudio' />
-                         <img src={keller} alt='keller' />
-                         <img src={memora_health} alt='memora_health' />
-                    </div>
-                    <div className='image-row bottom-row'>
-                         <img src={pingidentity} alt='pingidentity' />
-                         <img src={ucsf} alt='ucsf' />
-                         <img src={phil} alt='phil' />
-                         <img src={macmillan} alt='macmillan' />
-                    </div>
+                    <img src={microsoft} alt='microsoft' />
+                    <img src={laudio} alt='laudio' />
+                    <img src={keller} alt='keller' />
+                    <img src={memora_health} alt='memora_health' />
+                    <img src={pingidentity} alt='pingidentity' />
+                    <img src={ucsf} alt='ucsf' />
+                    <img src={phil} alt='phil' />
+                    <img src={macmillan} alt='macmillan' />
                </div>
           </div>
      );

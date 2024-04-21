@@ -1,89 +1,72 @@
-
 .brand__padding {
-     padding: 1rem 15rem;
+    padding: 1rem;
 }
 
-.brand__margin {
-     margin: 4rem 6rem;
+@media (min-width: 576px) {
+    .brand__padding {
+        padding: 1rem 2rem;
+    }
 }
+
+@media (min-width: 768px) {
+    .brand__padding {
+        padding: 1rem 4rem;
+    }
+}
+
+@media (min-width: 992px) {
+    .brand__padding {
+        padding: 1rem 6rem;
+    }
+}
+
+@media (min-width: 1200px) {
+    .brand__padding {
+        padding: 1rem 8rem;
+    }
+}
+
 .technology__brand {
-     display: flex;
-     flex-wrap: wrap;
-     justify-content: center;
-     align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 
 .title {
-     text-align: center;
-     font-size: 2.5rem;
-     line-height: 56px;
-     font-weight: 700;
-     margin-left: 10%;
-     font-family: var(--font-family);
+    text-align: center;
+    font-size: 2.5rem;
+    line-height: 56px;
+    font-weight: 700;
+    font-family: var(--font-family);
+    width: 100%;
 }
 
 .plus {
-     color: var(--main-color);
+    color: var(--main-color);
 }
 
 .fs-lead {
-     text-align: center;
-     font-size: 1.375rem;
+    text-align: center;
+    font-size: 1.375rem;
+    margin: 1rem 0;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 .image-container {
-     display: flex;
-     flex-direction: column;
-     align-items: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
 }
 
-.image-row {
-     display: flex;
-     justify-content: center;
-     align-items: center;
-}
-img{
-     max-width: 100%;
-     height: auto;
-     display: block;
-     border-style: none;
+@media (min-width: 768px) {
+    .image-container {
+        grid-template-columns: repeat(4, 1fr);
+    }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-@media screen and (min-width: 768px){
-     .fs-lead{
-          font-size: 1.25rem;
-          line-height: 28px;
-          letter-spacing: 0;
-     }
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-style: none;
 }
-
-
-
-
-

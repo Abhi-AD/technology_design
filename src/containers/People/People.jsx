@@ -6,7 +6,7 @@ import { FaArrowRight, FaLinkedin } from "react-icons/fa";
 
 const People = () => {
      return (
-          <div className="people">
+          <div className="people about_padding">
                <div className="people_title">
                     <span>Meet The Dream Team</span>
                     <h2><span>World-class people, </span> making a dent in the universe</h2>

@@ -1,5 +1,5 @@
 .cta_padding {
-     padding:  5% 15% 15% 15% ;
+     padding: 5% 15% 15% 15%;
 }
 
 .CTA {
@@ -84,4 +84,16 @@ img {
 .fa {
      height: 1rem;
      width: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+     .row {
+          flex-direction: column;
+          /* Change to column layout */
+     }
+
+     .col {
+          padding: 1.5rem;
+          /* Adjusted padding for columns */
+     }
 }

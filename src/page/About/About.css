@@ -1,5 +1,7 @@
 .panel {
-     padding: 2rem 12rem 5rem 12rem;
      display: grid;
      gap: 5rem;
+}
+.about_padding{
+     padding: 2rem 12rem 5rem 12rem;
 }

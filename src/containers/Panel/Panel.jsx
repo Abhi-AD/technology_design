@@ -3,7 +3,7 @@ import { FaCalendarAlt, FaCheckCircle, FaGrin, FaUsers } from "react-icons/fa";
 import './Panel.css'
 const Panel = () => {
      return (
-          <div className="panel_row">
+          <div className="panel_row about_padding">
                <div className="panel_col">
                     <div className="panel_content">
                          <FaCalendarAlt className='panel_icon' />

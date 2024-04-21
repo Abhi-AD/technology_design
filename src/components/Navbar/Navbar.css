@@ -6,8 +6,7 @@
 }
 
 .menu-link {
-     padding: 35px;
-     margin: -16px;
+     
 }
 
 .technology__navbar {
@@ -83,6 +82,7 @@
 }
 
 .technology__navbar-menu_container {
+     color: #edecec;
      display: flex;
      justify-content: flex-end;
      align-items: flex-end;

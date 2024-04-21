@@ -18,7 +18,7 @@
      margin-left: auto;
 }
 
-/* subscription */
+
 .footer_subscription {
      display: flex;
      justify-content: center;
@@ -55,8 +55,8 @@ input[type='email']::placeholder {
 .sub_form input {
      background-color: #575555;
      color: #828282;
-    border-color: #d01717;
-    border-style: solid;
+     border-color: #d01717;
+     border-style: solid;
      margin: 0 0 20px 0;
      border: none;
      border-radius: 0 !important;
@@ -87,7 +87,7 @@ input[type='email']::placeholder {
 
 
 
-/* menu */
+
 .footer__menu .col-lg-3 {
      width: 25%;
      float: left;
@@ -160,7 +160,7 @@ ul {
 
 
 
-/* footer__copyright */
+
 .footer__copyright {
      color: #fff;
      text-align: center;
@@ -198,4 +198,69 @@ ul {
      height: 60px;
      width: 60px;
      display: block;
+}
+
+
+@media screen and (max-width: 768px) {
+     .footer__menu .col-lg-3 {
+          width: 50%;
+          padding: 2% 1%;
+     }
+}
+
+@media screen and (max-width: 576px) {
+     .footer__menu .col-lg-3 {
+          width: 100%;
+     }
+
+     .footer_subscription {
+          flex-direction: column;
+          text-align: center;
+          padding: 2.5rem 0;
+     }
+
+     .sub_form {
+          padding: 0;
+          margin: 0 auto;
+          width: 80%;
+          flex-direction: column;
+          text-align: center;
+          gap: 1px;
+
+     }
+
+     .sub_form input {
+          width: 100%;
+     }
+
+     .footer_button {
+          margin: 1rem auto;
+     }
+
+     .footer__block ul li {
+          padding: 1rem 0;
+     }
+
+     .icons {
+          margin-right: 0;
+     }
+
+     .footer__copyright {
+          flex-direction: column;
+          padding-left: -20rem;
+          gap: 3px;
+          justify-content: left;
+     }
+
+     .footer__copyright ul {
+          justify-content: center;
+          flex-direction: column;
+          gap: 1px;
+
+     }
+
+     .footer_copyright_text {
+          margin-right: 0;
+          margin-left: 0;
+     }
 }

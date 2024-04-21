@@ -6,7 +6,7 @@ import aboutImage from '../../assests/img/about.png';
 
 const Hero = () => {
      return (
-          <div className="hero_about-row">
+          <div className="hero_about-row about_padding">
                <div className="col-about">
                     <h2>About us</h2>
                     <p className='about-header'> <span>Innovation</span> is in our DNA.</p>
