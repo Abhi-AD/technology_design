@@ -21,7 +21,7 @@ const Casestudy = () => {
                               <h3>We helped City of Seattle administer 1 million COVID doses to reach 70% full vaccination</h3>
                               <p>We beat Salesforce and Microsoft to be selected by the City of Seattle as the end-to-end vaccination solution that made Seattle become the 1st large US city to reach 70% full vaccinations. This made up King County’s 82% doses.</p>
                               <div className='case-card-button'>
-                                   <Link className='case-card-box'>
+                                   <Link className='case-card-box' to={`/case-study-details`}>
                                         <span>read the story</span>
                                         <FaArrowRight />
                                    </Link>
@@ -36,7 +36,7 @@ const Casestudy = () => {
                               <h3>We are leveraging AI and ML to help solve staff burnout at 10+ large hospitals</h3>
                               <p>We build a staff relationship management platform to achieve the vision to help frontline managers influence stronger staff engagement, satisfaction, and retention. </p>
                               <div className='case-card-button'>
-                                   <Link className='case-card-box'>
+                                   <Link className='case-card-box' to={`/case-study-details`}>
                                         <span>read the story</span>
                                         <FaArrowRight />
                                    </Link>
