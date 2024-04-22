@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { RiMenu3Line, RiCloseLine } from 'react-icons/ri'
 import './Navbar.css';
-import logo from '../../assests/logo.jpg'
+import logo from '../../assests/travel logo.png'
 import Button from './Button';
 import { Link } from 'react-router-dom';
 

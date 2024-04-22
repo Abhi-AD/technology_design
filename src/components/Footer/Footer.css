@@ -95,7 +95,7 @@ input[type='email']::placeholder {
 }
 
 .footer_logo {
-     height: 36px;
+     height: 100px;
      width: 188px;
      display: block;
 }

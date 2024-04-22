@@ -3,25 +3,26 @@
      display: flex;
      justify-content: center;
      align-items: center;
-     padding: 2rem;
+     padding: 1rem;
 }
 
 .parnter_content {
      display: flex;
      justify-content: space-between;
      align-items: center;
-     max-width: 1200px;
+     max-width: 1000px;
 }
 
 .parnter {
-     width: 45%;
-     max-width: 400px;
+     width: 40%;
+     height: 700px;
+     /* max-width: 400px; */
 }
 
 .parnter_infos {
-     width: 45%;
-     padding-left: 1.5rem;
-     text-align: center;
+     width: 50%;
+     padding-left: 1rem;
+     text-align: left;
 }
 
 .parnter_info-title {
@@ -70,9 +71,10 @@
      }
 
      .parnter {
-          width: 50%;
-          max-width: 50%;
+          width: 30%;
+          max-width: 30%;
           margin-bottom: 2rem;
+          height: 200px;
      }
 
      .parnter_infos {
