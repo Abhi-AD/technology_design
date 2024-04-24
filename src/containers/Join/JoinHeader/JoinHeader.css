@@ -53,3 +53,33 @@
      border-radius: 100px;
      display: inline-block;
 }
+
+@media (max-width: 768px) {
+     .join-header {
+       padding: 1rem 1.5rem 5rem 1.5rem;
+     }
+   
+     .join-header-title-title {
+       font-size: 2.5rem;
+       line-height: 50px;
+     }
+   
+     .join-header-body {
+       flex-direction: column;
+     }
+   
+     .join-header-body-col {
+       width: 100%;
+       margin-bottom: 2rem;
+     }
+   
+     .join-header-body-col-title1,
+     .join-header-body-col-title2 {
+       font-size: 1.1rem;
+       line-height: 24px;
+     }
+   
+     .request {
+       margin-top: 1rem;
+     }
+   }

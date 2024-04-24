@@ -29,3 +29,23 @@
      margin-top: 2.5rem;
      flex-direction: row;
 }
+
+@media (max-width: 768px) {
+     .start {
+          padding: 1rem;
+     }
+
+     .start-header {
+          font-size: 1.8rem;
+          line-height: 40px;
+     }
+
+     .start-des {
+          font-size: 1rem;
+          line-height: 24px;
+     }
+
+     .start-footer {
+          flex-direction: row;
+     }
+}
