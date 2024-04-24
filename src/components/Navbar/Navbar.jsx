@@ -46,7 +46,7 @@ const Menu = ({ isServiceOpen, isJoinOpen, serviceDropdown, joinDropdown }) => (
                     <span className='navbar-link'>Join</span>
                     {isJoinOpen && (
                          <div className={`header_dropdown`}>
-                              <Link className='header-sublist'>
+                              <Link className='header-sublist' to={`/join`}>
                                    <PiRectangleThin className='header-icon' />
                                    <p className="header__dropdown-title">Careers</p>
                                    <p className="header__dropdown-des">From concept to completion, the design and delivery of technology and products</p>                                   </Link>

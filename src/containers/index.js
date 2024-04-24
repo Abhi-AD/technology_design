@@ -14,3 +14,4 @@ export {default as ServiceInnovation} from './Service/ServiceInnovation/ServiceI
 export {default as ServiceWork} from './Service/ServiceWork/ServiceWork'
 export {default as ServiceAbout} from './Service/ServiceAbout/ServiceAbout'
 export {default as ServiceFooter} from './Service/ServiceFooter/ServiceFooter'
+export {default as JoinHeader} from './Join/JoinHeader/JoinHeader'
