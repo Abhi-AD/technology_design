@@ -17,8 +17,10 @@ const ServiceHeader = () => {
 
                     <div className='case-card-button'>
                          <Link className='case-card-box' to={`/case-study-details`}>
-                              <span>get in touch</span>
-                              <FaArrowRight />
+                              <div class="icon-text-container">
+                                   <span>get in touch</span>
+                                   <FaArrowRight className='' />
+                              </div>
                          </Link>
                     </div>
                </div>

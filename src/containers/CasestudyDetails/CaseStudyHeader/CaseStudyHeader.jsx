@@ -1,7 +1,8 @@
 import React from 'react';
 import './CaseStudyHeader.css';
 import { Link } from 'react-router-dom';
-import { FaAirbnb, FaArtstation, FaCloudversify, FaDatabase } from "react-icons/fa6";
+import { FaAirbnb, FaCloudversify } from "react-icons/fa6";
+import { MdOutlineDashboard, MdOutlineHorizontalSplit } from 'react-icons/md';
 
 const CaseStudyHeader = () => {
     return (
@@ -40,11 +41,11 @@ const CaseStudyHeader = () => {
                             <span className='casestudydetails-header-footer-col-deliveries-title'>Deliverables</span>
                             <ul className='deliverables'>
                                 <li>
-                                    <FaDatabase className='deliberables-icon' />
+                                    <MdOutlineDashboard className='deliberables-icon' />
                                     <span>Build With us</span>
                                 </li>
                                 <li>
-                                    <FaArtstation className='deliberables-icon' />
+                                    <MdOutlineHorizontalSplit className='deliberables-icon' />
                                     <span>AI</span>
                                 </li>
                                 <li>

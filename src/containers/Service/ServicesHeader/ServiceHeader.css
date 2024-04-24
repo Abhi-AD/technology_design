@@ -51,11 +51,17 @@
 }
 
 .case-card-button {
-     text-align: center;
+     align-items: center;
+     display: flex;
+}
+
+.icon-text-container {
+     display: flex;
+     gap: 0.1rem;
 }
 
 .case-card-box {
-     display: inline-block;
+     display: flex;
      padding: 0.5rem 1rem;
      border-radius: 5px;
      text-decoration: none;
