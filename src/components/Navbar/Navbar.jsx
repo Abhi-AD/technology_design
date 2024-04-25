@@ -1,144 +1,163 @@
-import React, { useState } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import './Navbar.css';
-import { RiMenu3Line, RiCloseLine } from 'react-icons/ri'
 import logo from '../../assests/travel logo.png';
 import { Link } from 'react-router-dom';
 import { PiRectangleThin } from 'react-icons/pi';
+import { RiMenu3Line, RiCloseLine } from 'react-icons/ri'
 
-const Menu = ({ isServiceOpen, isJoinOpen, serviceDropdown, joinDropdown }) => (
+const Menu = ({ isServiceOpen, isJoinOpen, toggleService, toggleJoin }) => {
+     const handleClickOutside = (event) => {
+          if (node.current && !node.current.contains(event.target)) {
+               toggleService(false);
+               toggleJoin(false);
+          }
+     };
+
+     useEffect(() => {
+          document.addEventListener('mousedown', handleClickOutside);
+          return () => {
+               document.removeEventListener('mousedown', handleClickOutside);
+          };
+     });
+
+     const node = useRef();
+
+     return (
+          <>
+               <ul className="header-list">
+                    <li key="home">
+                         <Link className='navbar-link' to={`/`}>Home</Link>
+                    </li>
+                    <li key="service" onClick={() => toggleService(!isServiceOpen)}>
+                         <span className='navbar-link'>Service</span>
+                         {isServiceOpen && (
+                              <div className={`header_dropdown`} ref={node}>
+                                   <Link className='header-sublist' to={`/service`}>
+                                        <PiRectangleThin className='header-icon' />
+                                        <p className="header__dropdown-title">Products & Technology</p>
+                                        <p className="header__dropdown-des">From concept to completion, the design and delivery of technology and products</p>
+                                   </Link>
+                                   <Link className='header-sublist'>
+                                        <PiRectangleThin className='header-icon' />
+                                        <p className="header__dropdown-title">Team Augmentation</p>
+                                        <p className="header__dropdown-des">A custom-built group of developers and designers, fine-tuned for delivery</p>
+                                   </Link>
+                                   <Link className='header-sublist'>
+                                        <PiRectangleThin className='header-icon' />
+                                        <p className="header__dropdown-title">Design</p>
+                                        <p className="header__dropdown-des">Bring your product vision to life with UI/UX design, prototypes, and videos</p>
+                                   </Link>
+                                   <Link className='header-sublist'>
+                                        <PiRectangleThin className='header-icon' />
+                                        <p className="header__dropdown-title">Data & AI</p>
+                                        <p className="header__dropdown-des">Smarter apps and better decisions with data engineering, analytics, ML, and LLM</p>
+                                   </Link>
+                                   <Link className='header-sublist'>
+                                        <PiRectangleThin className='header-icon' />
+                                        <p className="header__dropdown-title">DevOps & Cloud</p>
+                                        <p className="header__dropdown-des">Cloud-based solutions for world-class security, scalability and cost-effectiveness</p>
+                                   </Link>
+                              </div>
+                         )}
+                    </li>
+                    <li key="join" onClick={() => toggleJoin(!isJoinOpen)}>
+                         <span className='navbar-link'>Join</span>
+                         {isJoinOpen && (
+                              <div className={`header_dropdown`} ref={node}>
+                                   <Link className='header-sublist' to={`/join`}>
+                                        <PiRectangleThin className='header-icon' />
+                                        <p className="header__dropdown-title">Careers</p>
+                                        <p className="header__dropdown-des">From concept to completion, the design and delivery of technology and products</p>
+                                   </Link>
+                                   <Link className='header-sublist'>
+                                        <PiRectangleThin className='header-icon' />
+                                        <p className="header__dropdown-title">Fellowship</p>
+                                        <p className="header__dropdown-des">A custom-built group of developers and designers, fine-tuned for delivery</p>
+                                   </Link>
+                              </div>
+                         )}
+                    </li>
+                    <li key="blog">
+                         <Link className='navbar-link' to={`/blog`}>Blog</Link>
+                    </li>
+                    <li key="about">
+                         <Link className='navbar-link' to={`/about`}>About Us</Link>
+                    </li>
+               </ul>
+          </>
+     )
+}
+
+const Button = () => (
      <>
-          <ul className="header-list">
-               <li key="home">
-                    <Link className='navbar-link' to={`/`}>Home</Link>
-               </li>
-               <li key="service" onClick={serviceDropdown}>
-                    <span className='navbar-link'>Service</span>
-                    {isServiceOpen && (
-                         <div className={`header_dropdown`}>
-                              <Link className='header-sublist' to={`/service`}>
-                                   <PiRectangleThin className='header-icon' />
-                                   <p className="header__dropdown-title">Products & Technology</p>
-                                   <p className="header__dropdown-des">From concept to completion, the design and delivery of technology and products</p>                                   </Link>
-                              <Link className='header-sublist'>
-                                   <PiRectangleThin className='header-icon' />
-                                   <p className="header__dropdown-title">Team Augmentation</p>
-                                   <p className="header__dropdown-des">A custom-built group of developers and designers, fine-tuned for delivery</p>
-                              </Link>
-                              <Link className='header-sublist'>
-                                   <PiRectangleThin className='header-icon' />
-                                   <p className="header__dropdown-title">Design</p>
-                                   <p className="header__dropdown-des">Bring your product vision to life with UI/UX design, prototypes, and videos</p>
-                              </Link>
-                              <Link className='header-sublist'>
-                                   <PiRectangleThin className='header-icon' />
-                                   <p className="header__dropdown-title">Data & AI</p>
-                                   <p className="header__dropdown-des">Smarter apps and better decisions with data engineering, analytics, ML, and LLM</p>
-                              </Link>
-                              <Link className='header-sublist'>
-                                   <PiRectangleThin className='header-icon' />
-                                   <p className="header__dropdown-title">DevOps & Cloud</p>
-                                   <p className="header__dropdown-des">Cloud-based solutions for world-class security, scalability and cost-effectiveness</p>
-                              </Link>
-                         </div>
-                    )}
-               </li>
-               <li key="join" onClick={joinDropdown}>
-                    <span className='navbar-link'>Join</span>
-                    {isJoinOpen && (
-                         <div className={`header_dropdown`}>
-                              <Link className='header-sublist' to={`/join`}>
-                                   <PiRectangleThin className='header-icon' />
-                                   <p className="header__dropdown-title">Careers</p>
-                                   <p className="header__dropdown-des">From concept to completion, the design and delivery of technology and products</p>                                   </Link>
-                              <Link className='header-sublist'>
-                                   <PiRectangleThin className='header-icon' />
-                                   <p className="header__dropdown-title">Fellowship</p>
-                                   <p className="header__dropdown-des">A custom-built group of developers and designers, fine-tuned for delivery</p>
-                              </Link>
-                         </div>
-                    )}
-               </li>
-               <li key="blog">
-                    <Link className='navbar-link' to={`/blog`}>Blog</Link>
-               </li>
-               <li key="about">
-                    <Link className='navbar-link' to={`/about`}>About Us</Link>
-               </li>
-          </ul>
+          <div className="header-button">
+               <Link className='animation animation-contact' to={`/visiting-card`}>
+                    <div className="animation-icon">
+                         <PiRectangleThin className='rectangle' />
+                         <span className='animation-line'></span>
+                    </div>
+                    <span>Build with Card</span>
+               </Link>
+               <Link className='animation animation-card' to={`/contact`}>
+                    <div className="animation-icon">
+                         <PiRectangleThin className='rectangle' />
+                         <span className='animation-line'></span>
+                    </div>
+                    <span>Build with us</span>
+               </Link>
+          </div>
      </>
-);
+)
 
 const Navbar = () => {
-     const [toggleMenu, setToggleMenu] = useState(false);
-     const [isServiceOpen, setIsServiceOpen] = useState(false); // State to manage dropdown visibility
-     const [isJoinOpen, setIsJoinOpen] = useState(false); // State to manage dropdown visibility
+     const [isServiceOpen, setIsServiceOpen] = useState(false);
+     const [isJoinOpen, setIsJoinOpen] = useState(false);
+     const [toggleMenu, setToggleMenu] = useState(false)
 
-     const serviceDropdown = () => {
-          setIsServiceOpen(!isServiceOpen);
+     const toggleService = (isOpen) => {
+          setIsServiceOpen(isOpen);
+          setIsJoinOpen(false);
      };
-     const joinDropdown = () => {
-          setIsJoinOpen(!isJoinOpen);
+
+     const toggleJoin = (isOpen) => {
+          setIsJoinOpen(isOpen);
+          setIsServiceOpen(false);
      };
 
      return (
-          <div className='header'>
-               <Link className='logo' to={`/`}>
-                    <img src={logo} alt="logo" />
-               </Link>
-               <div className="header_link">
-                    <Menu
-                         isServiceOpen={isServiceOpen}
-                         isJoinOpen={isJoinOpen}
-                         serviceDropdown={serviceDropdown}
-                         joinDropdown={joinDropdown}
-                    />
-               </div>
-               <div className="header-button">
-                    <Link className='animation animation-contact' to={`/visiting-card`}>
-                         <div className="animation-icon">
-                              <PiRectangleThin className='rectangle' />
-                              <span className='animation-line'></span>
-                         </div>
-                         <span>Build with Card</span>
+          <div className="header-menu">
+               <div className='header'>
+                    <Link className='logo' to={`/`}>
+                         <img src={logo} alt="logo" />
                     </Link>
-                    <Link className='animation animation-card' to={`/contact`}>
-                         <div className="animation-icon">
-                              <PiRectangleThin className='rectangle' />
-                              <span className='animation-line'></span>
-                         </div>
-                         <span>Build with us</span>
-                    </Link>
+                    <div className="header_link">
+                         <Menu
+                              isServiceOpen={isServiceOpen}
+                              isJoinOpen={isJoinOpen}
+                              toggleService={toggleService}
+                              toggleJoin={toggleJoin}
+                         />
+                    </div>
+                    <Button />
                </div>
-               <div className='navbar-menu'>
+
+               <div className="header-small">
                     {toggleMenu
-                         ? <RiCloseLine color='#fff' size={28} onClick={(e) => setToggleMenu(false)} />
-                         : <RiMenu3Line color='#fff' size={28} onClick={(e) => setToggleMenu(true)} />
+                         ? <RiCloseLine color='#000' size={28} onClick={(e) => setToggleMenu(false)} />
+                         : <RiMenu3Line color='#000' size={28} onClick={(e) => setToggleMenu(true)} />
                     }
                     {toggleMenu && (
-                         <div className="navbar-menu_container scale-up-center">
-                              <div className="navbar-menu_container-links">
-                                   <Menu />
-                              </div>
-                              <div className="header-button">
-                                   <Link className='animation animation-contact' to={`/contact`}>
-                                        <div className="animation-icon">
-                                             <PiRectangleThin className='rectangle' />
-                                             <span className='animation-line'></span>
-                                        </div>
-                                        <span>Build with Card</span>
-                                   </Link>
-                                   <Link className='animation animation-card' to={`/contact`}>
-                                        <div className="animation-icon">
-                                             <PiRectangleThin className='rectangle' />
-                                             <span className='animation-line'></span>
-                                        </div>
-                                        <span>Build with us</span>
-                                   </Link>
-                              </div>
+                         <div className='header-phone'>
+                              <Link className='logo' to={`/`}>
+                                   <img src={logo} alt="logo" />
+                              </Link>
+                              <Menu />
+                              <Button />
                          </div>
                     )}
                </div>
           </div>
+
      );
 };
 
