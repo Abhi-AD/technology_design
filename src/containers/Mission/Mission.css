@@ -51,3 +51,16 @@
      font-size: 1rem;
      line-height: 20px;
 }
+
+
+@media only screen and (max-width: 768px) {
+     .mission {
+          flex-direction: column;
+          padding: 6rem;
+          gap: 10rem;
+     }
+
+     .mission-col {
+          width: 90%;
+     }
+}

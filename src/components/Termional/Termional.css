@@ -1,71 +1,90 @@
-.people-container {
-     padding: 5rem 15rem 15rem 5rem;
-     position: relative;
-     overflow: hidden;
- }
- 
- .people-image-holder {
-     overflow: hidden;
- }
- 
- .people {
-     animation: people 10s linear infinite;
-     display: flex;
-     justify-content: center;
-     text-align: center;
-     gap: 2rem;
-     align-items: flex-start;
-     flex-wrap: wrap;
-     flex-direction: row;
-     transition: transform 1s;
- }
- 
- .people img {
-     border-bottom-right-radius: 4rem;
-     width: 25%;
-     height: auto;
- }
- 
- .people-des {
-     width: 40%;
-     display: grid;
-     gap: 1rem;
-     text-align: left;
- }
- 
- .quote-icon {
-     font-size: 3rem;
-     color: var(--main-color);
- }
- 
- .bio1 {
-     font-size: 1.3rem;
- }
- 
- .bio2 {
-     font-size: 1rem;
- }
- 
- .people-name {
-     font-size: 2rem;
-     color: var(--main-color);
- }
- 
- .people-post {
-     font-size: 1rem;
- }
- 
- @keyframes people {
-     0% {
-         opacity: 0;
-     }
- 
-     50% {
-         opacity: 1;
-     }
- 
-     100% {
-         opacity: 0;
-     }
- }
- 
+.termional-container {
+    padding: 5rem 15rem 15rem 5rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.termional-image-holder {
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+}
+
+.termional {
+    animation: termional 10s linear infinite;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    gap: 2rem;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    flex-direction: row;
+    transition: transform 1s;
+}
+
+.termional img {
+    border-bottom-right-radius: 4rem;
+    width: 25%;
+    height: auto;
+}
+
+.termional-des {
+    width: 40%;
+    display: grid;
+    gap: 1rem;
+    text-align: left;
+}
+
+.quote-icon {
+    font-size: 3rem;
+    color: var(--main-color);
+}
+
+.bio1 {
+    font-size: 1.3rem;
+}
+
+.bio2 {
+    font-size: 1rem;
+}
+
+.termional-name {
+    font-size: 2rem;
+    color: var(--main-color);
+}
+
+.termional-post {
+    font-size: 1rem;
+}
+
+@keyframes termional {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+
+@media screen and (max-width:768px) {
+    .termional-container {
+        padding: 2rem 1rem 1rem 8rem;
+        justify-content: center;
+    }
+
+    .termional {
+        flex-direction: column;
+    }
+
+    .termional img {
+        border-bottom-right-radius: 4rem;
+        width: 50%;
+        height: auto;
+    }
+}

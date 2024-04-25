@@ -206,9 +206,15 @@ ul {
           width: 50%;
           padding: 2% 1%;
      }
-}
 
-@media screen and (max-width: 576px) {
+     .footer_subscription {
+          flex-direction: column;
+     }
+
+     .sub_form {
+          height: auto;
+     }
+
      .footer__menu .col-lg-3 {
           width: 100%;
      }
@@ -246,21 +252,10 @@ ul {
      }
 
      .footer__copyright {
+          color: #fff;
+          text-align: center;
           flex-direction: column;
-          padding-left: -20rem;
-          gap: 3px;
-          justify-content: left;
-     }
-
-     .footer__copyright ul {
+          align-items: center;
           justify-content: center;
-          flex-direction: column;
-          gap: 1px;
-
-     }
-
-     .footer_copyright_text {
-          margin-right: 0;
-          margin-left: 0;
      }
 }
