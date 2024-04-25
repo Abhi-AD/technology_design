@@ -94,7 +94,7 @@ const Navbar = () => {
                     />
                </div>
                <div className="header-button">
-                    <Link className='animation animation-contact' to={`/contact`}>
+                    <Link className='animation animation-contact' to={`/visiting-card`}>
                          <div className="animation-icon">
                               <PiRectangleThin className='rectangle' />
                               <span className='animation-line'></span>
