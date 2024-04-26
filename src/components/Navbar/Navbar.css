@@ -1,9 +1,12 @@
-.header {
+.header-menu {
      background-color: var(--color-bg);
      position: sticky;
      top: 0;
      z-index: 99;
      padding: 0 1.5rem;
+}
+
+.header {
      display: flex;
      flex-direction: row;
      align-items: center;
@@ -172,28 +175,28 @@
 
 @media screen and (max-width: 768px) {
      .header {
-         display: none;
+          display: none;
      }
- 
+
      .header_link {
-         width: 100%;
-         margin-top: 1rem;
+          width: 100%;
+          margin-top: 1rem;
      }
- 
+
      .header-list {
-         flex-direction: column;
-         align-items: flex-start;
+          flex-direction: column;
+          align-items: flex-start;
      }
- 
+
      .navbar-link {
-         padding: 1rem 0;
+          padding: 1rem 0;
      }
- 
+
      .header_dropdown {
-         padding: 1rem;
-         grid-template-columns: repeat(1, 1fr);
+          padding: 1rem;
+          grid-template-columns: repeat(1, 1fr);
      }
-     
+
      .header-button {
           flex-direction: column;
           width: 15rem;

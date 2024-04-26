@@ -1,6 +1,6 @@
 import React from 'react'
 import { Route, BrowserRouter as Router, Routes } from 'react-router-dom'
-import { Navbar, Footer } from './components/index'
+import { Navbar, Footer, ScrollToTopButton } from './components/index'
 import { Home, Services, Join, Blog, About, Contact, VisitCard } from './page/imports'
 import './App.css'
 import { ApplyForm, Casestudy, CasestudyDetails } from './containers/index'
@@ -8,6 +8,7 @@ import { ApplyForm, Casestudy, CasestudyDetails } from './containers/index'
 const App = () => {
      return (
           <Router>
+               <ScrollToTopButton />
                <Navbar />
                <Routes>
                     <Route path='/' element={<Home />} />

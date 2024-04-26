@@ -1,9 +1,8 @@
 import React from 'react'
 import './Blog.css'
 import { BlogHeader1, BlogHeader2, Blog1, Blog2, Blog3, Blog4, Blog5, Blog6 } from './imports'
-import Category from '../../components/Category/Category'
+import { Category, Pagination } from '../../components/index'
 import { FaArrowRight } from 'react-icons/fa'
-import Pagination from '../../components/Pagination/Pagination'
 const Blog = () => {
   return (
     <div className='blog'>

@@ -12,7 +12,7 @@
 }
 
 .pagination ul {
-     gap: 1rem;
+     gap: 2rem;
      list-style: none;
      line-height: 0;
      display: flex;
@@ -38,4 +38,28 @@
 
 .icon_pagination:hover {
      color: var(--main-color);
+}
+
+@media screen and (max-width:768px) {
+     .pagination {
+          flex-wrap: wrap;
+     }
+     .pagination li,
+     .page_number {
+          text-align: center;
+     }
+     .pagination ul {
+          flex-direction: row ;
+          gap: 2rem;
+     }
+     /* Show the next and previous buttons on mobile */
+     .prev,
+     .next {
+          display: inline;
+     }
+     .page_number {
+          margin-top: 0.75rem;
+     }
+
+     
 }

@@ -207,16 +207,8 @@ ul {
           padding: 2% 1%;
      }
 
-     .footer_subscription {
-          flex-direction: column;
-     }
-
      .sub_form {
           height: auto;
-     }
-
-     .footer__menu .col-lg-3 {
-          width: 100%;
      }
 
      .footer_subscription {
@@ -240,7 +232,8 @@ ul {
      }
 
      .footer_button {
-          margin: 1rem auto;
+          margin-left: -10rem;
+
      }
 
      .footer__block ul li {
@@ -252,10 +245,22 @@ ul {
      }
 
      .footer__copyright {
+          margin-left: -10rem;
           color: #fff;
+          padding: 1rem;
           text-align: center;
           flex-direction: column;
           align-items: center;
-          justify-content: center;
+          gap: 1rem;
+          justify-content: left;
+     }
+
+     .footer__copyright ul {
+          gap: 1rem;
+          flex-direction: column;
+     }
+
+     .footer__copyright ul li {
+          margin-left: -10rem;
      }
 }

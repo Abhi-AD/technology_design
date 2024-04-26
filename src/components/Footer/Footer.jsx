@@ -23,7 +23,7 @@ const Footer = () => {
                         </div>
                         <div className="col-lg-3">
                             <div className="footer_block">
-                                <h3 className="footer_title">We are Leapfrog</h3>
+                                <h3 className="footer_title">We are TopaBhumi</h3>
                                 <ul>
                                     <li><Link className='link_footer' to='/about'><span>About us</span></Link></li>
                                     <li><Link className='link_footer' to='/resources'><span>Resource</span></Link></li>
@@ -38,7 +38,7 @@ const Footer = () => {
                                 <ul>
                                     <li><Link className='link_footer' to='/careers'><span>Careers</span></Link></li>
                                     <li><Link className='link_footer' to='/fellowship'><span>Fellowship</span></Link></li>
-                                    <li><Link className='link_footer' to='/life-at-leapfrog'><span>Life at Leapfrog</span></Link></li>
+                                    <li><Link className='link_footer' to='/life-at-TopaBhumi'><span>Life at TopaBhumi</span></Link></li>
                                 </ul>
                             </div>
                         </div>
@@ -72,7 +72,7 @@ const Footer = () => {
                             </div>
                             <div className="footer_block">
                                 <ul>
-                                    <li><Link className='link_footer' to='/leapfrog-brand'><FaCodeBranch className='icons' /><span>Leapfrog Brand</span></Link></li>
+                                    <li><Link className='link_footer' to='/topabhmi-brand'><FaCodeBranch className='icons' /><span>TopaBhumi Brand</span></Link></li>
                                     <li><Link className='link_footer' to='/education-mission'><FaGraduationCap className='icons' /><span>Education Mission</span></Link></li>
                                     <li><Link className='link_footer' to='/student-partnership'><FaUserFriends className='icons' /><span>Student Partnership</span></Link></li>
                                 </ul>
@@ -83,7 +83,7 @@ const Footer = () => {
                 <hr className='line' />
                 <div className="footer__copyright">
                     <img src={footer_button} alt="footer_button" className='footer_button' />
-                    <p className='footer_copyright_text'>Copyright, Leapfrog Technology Inc. </p>
+                    <p className='footer_copyright_text'>Copyright, TopaBhumi Technology Inc. </p>
                     <ul>
                         <li>Privacy Policy</li>
                         <li>Data Policy</li>
