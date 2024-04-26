@@ -36,15 +36,16 @@
      width: 100%;
      gap: 10px;
 }
-.item_icon{
+
+.item_icon {
      font-size: 30px;
 }
 
 .tab-item:active,
 .tab-item:focus,
 .tab-item:hover {
-     color: var(--main-color);
-     background-color: #edecec;
+     color: var(--color-bg);
+     background-color: var(--color-footer);
 }
 
 .tab-item.active {
@@ -53,33 +54,34 @@
      font-weight: 700;
 }
 
-@media only screen and (max-width: 500px) {
-     .tab-header__item .tab-text {
-          display: none;
-     }
-}
-
-@media only screen and (min-width: 768px) {
-     .tab-header__list {
-          flex-direction: row;
-     }
-}
 
 
-/* Common styles for tab-card */
+
+
+
+
+
+
+
+
+
+
+
+
 .tab-card {
-     padding-left: 10rem;
-     padding-right: 10rem;
-     background-color: var(--color-text);
+     padding: 1rem 8rem;
      display: flex;
-     gap: 1.5rem;
+     color: var(--color-bg);
+     justify-content: center;
+     background-color: var(--color-footer);
 }
 
-.tab-card-col {
-     color: var(--color-bg);
+.tab-card-col-left {
      padding: 3rem;
      flex: 1;
+     width: 55%;
 }
+
 
 .tab-card-col-title {
      font-size: 1rem;
@@ -105,6 +107,7 @@
      line-height: 30px;
      letter-spacing: 0;
      margin-bottom: 24px;
+     color: var(--color-footer-text);
 }
 
 .tab-card-col-button {
@@ -117,17 +120,15 @@
      color: var(--color-footer-text);
 }
 
-.tab-card-col img {
-     display: block;
-     max-width: 100%;
-     height: auto;
-     margin: 0 auto;
-     /* Center image */
+.tab-card-col-right img {
+     height: 300px;
+     width: 300px;
+
 }
 
-/* Media queries for responsive design */
 
-/* Small screens */
+/*
+
 @media only screen and (max-width: 767px) {
      .tab-card {
           flex-direction: column;
@@ -143,7 +144,7 @@
      }
 }
 
-/* Medium screens */
+
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
      .tab-card {
           padding: 5rem;
@@ -154,7 +155,7 @@
      }
 }
 
-/* Large screens */
+
 @media only screen and (min-width: 1024px) {
      .tab-card {
           padding: 10rem;
@@ -164,3 +165,15 @@
           padding: 3rem;
      }
 }
+
+@media only screen and (max-width: 500px) {
+     .tab-header__item .tab-text {
+          display: none;
+     }
+}
+
+@media only screen and (min-width: 768px) {
+     .tab-header__list {
+          flex-direction: row;
+     }
+}*/

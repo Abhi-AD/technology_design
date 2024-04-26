@@ -5,13 +5,21 @@ import { Link } from 'react-router-dom';
 import { PiRectangleThin } from 'react-icons/pi';
 import { RiMenu3Line, RiCloseLine } from 'react-icons/ri'
 
-const Menu = ({ isServiceOpen, isJoinOpen, toggleService, toggleJoin }) => {
+const Menu = ({ isServiceOpen, isJoinOpen, toggleService, toggleJoin,toggleMenu }) => {
      const handleClickOutside = (event) => {
           if (node.current && !node.current.contains(event.target)) {
                toggleService(false);
                toggleJoin(false);
+               toggleMenu(false)
           }
      };
+     
+     const handleNavLinkClick = () => {
+          toggleService(false);
+          toggleJoin(false);
+          toggleMenu(false);
+     };
+
 
      useEffect(() => {
           document.addEventListener('mousedown', handleClickOutside);
@@ -26,33 +34,33 @@ const Menu = ({ isServiceOpen, isJoinOpen, toggleService, toggleJoin }) => {
           <>
                <ul className="header-list">
                     <li key="home">
-                         <Link className='navbar-link' to={`/`}>Home</Link>
+                         <Link className='navbar-link' to={`/`} onClick={handleNavLinkClick}>Home</Link>
                     </li>
                     <li key="service" onClick={() => toggleService(!isServiceOpen)}>
                          <span className='navbar-link'>Service</span>
                          {isServiceOpen && (
                               <div className={`header_dropdown`} ref={node}>
-                                   <Link className='header-sublist' to={`/service`}>
+                                   <Link className='header-sublist' to={`/service`} onClick={handleNavLinkClick}>
                                         <PiRectangleThin className='header-icon' />
                                         <p className="header__dropdown-title">Products & Technology</p>
                                         <p className="header__dropdown-des">From concept to completion, the design and delivery of technology and products</p>
                                    </Link>
-                                   <Link className='header-sublist'>
+                                   <Link className='header-sublist' onClick={handleNavLinkClick}>
                                         <PiRectangleThin className='header-icon' />
                                         <p className="header__dropdown-title">Team Augmentation</p>
                                         <p className="header__dropdown-des">A custom-built group of developers and designers, fine-tuned for delivery</p>
                                    </Link>
-                                   <Link className='header-sublist'>
+                                   <Link className='header-sublist' onClick={handleNavLinkClick}>
                                         <PiRectangleThin className='header-icon' />
                                         <p className="header__dropdown-title">Design</p>
                                         <p className="header__dropdown-des">Bring your product vision to life with UI/UX design, prototypes, and videos</p>
                                    </Link>
-                                   <Link className='header-sublist'>
+                                   <Link className='header-sublist' onClick={handleNavLinkClick}>
                                         <PiRectangleThin className='header-icon' />
                                         <p className="header__dropdown-title">Data & AI</p>
                                         <p className="header__dropdown-des">Smarter apps and better decisions with data engineering, analytics, ML, and LLM</p>
                                    </Link>
-                                   <Link className='header-sublist'>
+                                   <Link className='header-sublist' onClick={handleNavLinkClick}>
                                         <PiRectangleThin className='header-icon' />
                                         <p className="header__dropdown-title">DevOps & Cloud</p>
                                         <p className="header__dropdown-des">Cloud-based solutions for world-class security, scalability and cost-effectiveness</p>
@@ -64,12 +72,12 @@ const Menu = ({ isServiceOpen, isJoinOpen, toggleService, toggleJoin }) => {
                          <span className='navbar-link'>Join</span>
                          {isJoinOpen && (
                               <div className={`header_dropdown`} ref={node}>
-                                   <Link className='header-sublist' to={`/join`}>
+                                   <Link className='header-sublist' to={`/join`} onClick={handleNavLinkClick}>
                                         <PiRectangleThin className='header-icon' />
                                         <p className="header__dropdown-title">Careers</p>
                                         <p className="header__dropdown-des">From concept to completion, the design and delivery of technology and products</p>
                                    </Link>
-                                   <Link className='header-sublist'>
+                                   <Link className='header-sublist' onClick={handleNavLinkClick}>
                                         <PiRectangleThin className='header-icon' />
                                         <p className="header__dropdown-title">Fellowship</p>
                                         <p className="header__dropdown-des">A custom-built group of developers and designers, fine-tuned for delivery</p>
@@ -77,11 +85,11 @@ const Menu = ({ isServiceOpen, isJoinOpen, toggleService, toggleJoin }) => {
                               </div>
                          )}
                     </li>
-                    <li key="blog">
-                         <Link className='navbar-link' to={`/blog`}>Blog</Link>
+                     <li key="blog">
+                         <Link className='navbar-link' to={`/blog`} onClick={handleNavLinkClick}>Blog</Link>
                     </li>
                     <li key="about">
-                         <Link className='navbar-link' to={`/about`}>About Us</Link>
+                         <Link className='navbar-link' to={`/about`} onClick={handleNavLinkClick}>About Us</Link>
                     </li>
                </ul>
           </>
@@ -112,7 +120,8 @@ const Button = () => (
 const Navbar = () => {
      const [isServiceOpen, setIsServiceOpen] = useState(false);
      const [isJoinOpen, setIsJoinOpen] = useState(false);
-     const [toggleMenu, setToggleMenu] = useState(false)
+     const [toggleMenu, setToggleMenu] = useState(false);
+
 
      const toggleService = (isOpen) => {
           setIsServiceOpen(isOpen);
@@ -136,6 +145,7 @@ const Navbar = () => {
                               isJoinOpen={isJoinOpen}
                               toggleService={toggleService}
                               toggleJoin={toggleJoin}
+                              toggleMenu={setToggleMenu}
                          />
                     </div>
                     <Button />
@@ -151,7 +161,13 @@ const Navbar = () => {
                               <Link className='logo' to={`/`}>
                                    <img src={logo} alt="logo" />
                               </Link>
-                              <Menu />
+                              <Menu
+                                   isServiceOpen={isServiceOpen}
+                                   isJoinOpen={isJoinOpen}
+                                   toggleService={toggleService}
+                                   toggleJoin={toggleJoin}
+                                   toggleMenu= {setToggleMenu}
+                                   className="menu" />
                               <Button />
                          </div>
                     )}
