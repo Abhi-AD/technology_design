@@ -7,7 +7,7 @@ const Parnter = () => {
     return (
         <div className='container parnterbg'>
             <div className="parnter_content">
-                <img src={parnter} alt="parnter" className='parnter' />
+                <img src={parnter} alt="parnter" className='parnter js-scroll fade-in' />
                 <div className="parnter_infos">
                     <span className='parnter_info-title'>the technology difference</span>
                     <h2 className='parnter_info-header'>We strive to be a <span style={{ color: 'var(--main-color)' }}>better technology partner.</span></h2>

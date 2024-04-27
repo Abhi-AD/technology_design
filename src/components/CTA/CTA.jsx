@@ -18,21 +18,21 @@ const CTA = () => {
                          </p>
                     </div>
                     <div className="row">
-                         <div className="col">
+                         <div className="col js-scroll fade-in">
                               <img src={design_discovery} alt="" />
                               <p className='desc'>Guide to a bulletproof design sprint aligning the goals of clients and end-users.</p>
                               <span className='button'>
                                    <FaFilePdf className='fa' /><p className='icon_text'>Get the book</p><FaArrowRight className='fa' />
                               </span>
                          </div>
-                         <div className="col">
+                         <div className="col js-scroll fade-in">
                               <img src={invincible_approach} alt="" />
                               <p className="desc">The product development roadmap that enables companies small or large build defensible digital products.</p>
                               <span className='button'>
                                    <FaFilePdf className='fa' /><p className='icon_text'>Get the book</p><FaArrowRight className='fa' />
                               </span>
                          </div>
-                         <div className="col">
+                         <div className="col js-scroll fade-in">
                               <img src={devops} alt="" />
                               <p className="desc">Drills down the basics about what DevOps is and how you should be following a DevOps culture.</p>
                               <span className='button'>

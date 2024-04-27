@@ -43,7 +43,7 @@ const Termional = () => {
     return (
         <div className="slideshow-container">
             <div className="termional fade">
-                <img src={person1} alt="person1" className='termional-img' />
+                <img src={person1} alt="person1" className='termional-img js-scroll fade-in' />
                 <div className="termional-des">
                     <RiDoubleQuotesR className='quote-icon' />
                     <p className="bio1">Become an advocate for biotechnology and help shape policy that promotes innovation! Contact policymakers directly through BIO’s easy-to-use tool and have your voice heard.</p>
@@ -53,7 +53,7 @@ const Termional = () => {
                 </div>
             </div>
             <div className="termional fade">
-                <img src={person2} alt="person2" className='termional-img' />
+                <img src={person2} alt="person2" className='termional-img js-scroll fade-in' />
                 <div className="termional-des">
                     <RiDoubleQuotesR className='quote-icon' />
                     <p className="bio1">Become an advocate for biotechnology and help shape policy that promotes innovation! Contact policymakers directly through BIO’s easy-to-use tool and have your voice heard.</p>

@@ -9,7 +9,7 @@ const ServiceInnovation = () => {
                     <h2 className='service-innovation-title-header'>Innovation that <span>just gets better</span></h2>
                     <p className='service-innovation-title-desc'>In today's world, markets and technology are changing at an accelerated pace, and innovation doesn't have a finish line. Whether you're a startup that wants to conquer the world, or an enterprise that needs to adapt, we harness the best of iterative processes, emerging technology, and data to navigate to success.</p>
                </div>
-               <div className="service-innovation-row">
+               <div className="service-innovation-row js-scroll fade-in">
                     <div className="service-innovation-col">
                          <span className='service-innovation-icon'><FaProjectDiagram fontSize={30} /></span>
                          <h3>Keep learning</h3>

@@ -11,7 +11,7 @@ const ServiceWork = () => {
                     <p className='service-work-title-desc'>When we design, diagram, and plan well the right code falls out of our fingers naturally. That's why we don't jump into coding immediately without discovery.</p>
                     <img src={servicework} alt="servicework" className='servicework' />
 
-                    <div className="service-work-innovation-row">
+                    <div className="service-work-innovation-row js-scroll fade-in">
                          <div className="service-work-innovation-col">
                               <span className='service-work-innovation-icon'><FaProjectDiagram fontSize={30} /></span>
                               <h3>Keep learning</h3>

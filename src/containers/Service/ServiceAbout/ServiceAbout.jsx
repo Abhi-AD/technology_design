@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 import { FaArrowRight } from 'react-icons/fa'
 const ServiceAbout = () => {
      return (
-          <div className='service-about'>
+          <div className='service-about js-scroll fade-in'>
                <div className="service-about-col">
                     <img src={servicefooter} alt="serviceaboutimage" className='service-about-image' />
                </div>

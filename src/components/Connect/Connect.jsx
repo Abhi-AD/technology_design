@@ -7,7 +7,7 @@ const Connect = () => (
      <div className='connect'>
           <h2>Ready to get started?</h2>
           <div className='connect__row'>
-               <div className='connect__row-card-left'>
+               <div className='connect__row-card-left js-scroll fade-in'>
                     <h3 className='connect__row-card-infoys-header'>Build with us</h3>
                     <div className='connect__row-card-infoys-des'>
                          <p className='connect__row-card-infoys-des-top'>
@@ -24,7 +24,7 @@ const Connect = () => (
                          </Link>
                     </div>
                </div>
-               <div className='connect__row-card-right'>
+               <div className='connect__row-card-right js-scroll fade-in'>
                     <h3 className='connect__row-card-infoys-header'>Join us</h3>
                     <div className='connect__row-card-infoys-des'>
                          <p className='connect__row-card-infoys-des-top'>

@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './ScrollToTopButton.css';
+import { FaAngleDoubleUp } from "react-icons/fa";
 
 const ScrollToTopButton = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -35,7 +36,7 @@ const ScrollToTopButton = () => {
       onClick={scrollToTop}
       title="Go to top"
     >
-      Top
+      <FaAngleDoubleUp />
     </button>
   );
 };

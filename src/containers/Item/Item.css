@@ -127,12 +127,16 @@
 }
 
 
-/*
+
 
 @media only screen and (max-width: 767px) {
      .tab-card {
           flex-direction: column;
           padding: 2rem;
+     }
+
+     .tab-header-service {
+          position: static;
      }
 
      .tab-card-col {
@@ -176,4 +180,4 @@
      .tab-header__list {
           flex-direction: row;
      }
-}*/
+}

@@ -11,8 +11,8 @@ const People = () => {
                     <span>Meet The Dream Team</span>
                     <h2><span>World-class people, </span> making a dent in the universe</h2>
                </div>
-               <div className="team">
-                    <div className="people_card">
+               <div className="team ">
+                    <div className="people_card js-scroll fade-in">
                          <img src="https://img.freepik.com/free-photo/young-bearded-man-with-striped-shirt_273609-5677.jpg?t=st=1713431319~exp=1713434919~hmac=3bcf09df3d7ac10db4ebcf9fe8aefaa60cef279803d923a3f638d7ca3a3cfb9b&w=900" alt='people1' />
                          <div className="team__infos">
                               <h3>Alex John </h3>
@@ -25,7 +25,7 @@ const People = () => {
                               </Link>
                          </div>
                     </div>
-                    <div className="people_card">
+                    <div className="people_card js-scroll fade-in">
                          <img src="https://img.freepik.com/free-photo/portrait-happy-young-woman-wearing-casual-tshirt-waving-hands-isolated-pink-background_1150-63284.jpg?t=st=1713432540~exp=1713436140~hmac=b41f2d2273f5397b5fd8a7a684ee4f4d6bb28d5bbb18ff1de004ff9a805d96e3&w=900" alt='people2' />
                          <div className="team__infos">
                               <h3>Sarita Patel</h3>
@@ -38,7 +38,7 @@ const People = () => {
                               </Link>
                          </div>
                     </div>
-                    <div className="people_card">
+                    <div className="people_card js-scroll fade-in">
                          <img src="https://img.freepik.com/free-photo/portrait-white-man-isolated_53876-40306.jpg?t=st=1713432915~exp=1713436515~hmac=e504d516d324c4d5488484986bfc5b3f33ea3bca1be374b34154a484984eac33&w=826" alt='people3' />
                          <div className="team__infos">
                               <h3>Raj Patel</h3>
@@ -51,7 +51,7 @@ const People = () => {
                               </Link>
                          </div>
                     </div>
-                    <div className="people_card">
+                    <div className="people_card js-scroll fade-in">
                          <img src="https://img.freepik.com/free-photo/young-beautiful-woman-pink-warm-sweater-natural-look-smiling-portrait-isolated-long-hair_285396-896.jpg?t=st=1713433107~exp=1713436707~hmac=ee272f3d67c9faca6410da9eb79c2fd6cf8a05075a96167d55d9a558790a4ff8&w=900" alt='people4' />
                          <div className="team__infos">
                               <h3>Kalpana Jha</h3>
@@ -64,7 +64,7 @@ const People = () => {
                               </Link>
                          </div>
                     </div>
-                    <div className="people_card">
+                    <div className="people_card js-scroll fade-in">
                          <img src="https://img.freepik.com/free-photo/closeup-portrait-woman-smiling-with-perfect-smile-white-teeth_273609-13701.jpg?t=st=1713433295~exp=1713436895~hmac=a5540d272b6e81605ac91e49f5a23fd28889d299109043a458f6f1dcf8db4e51&w=900" alt='people5' />
                          <div className="team__infos">
                               <h3>Aarati Khadka</h3>
@@ -77,7 +77,7 @@ const People = () => {
                               </Link>
                          </div>
                     </div>
-                    <div className="people_card">
+                    <div className="people_card js-scroll fade-in">
                          <img src="https://img.freepik.com/free-photo/portrait-happy-bearded-young-man-glasses-standing-outdoors_171337-14763.jpg?t=st=1713433946~exp=1713437546~hmac=07e74348b4dd587aeb0085822fade6fa79838714aa9af43f706fce03bdea9234&w=900" alt='people6' />
                          <div className="team__infos">
                               <h3>Pamela Kott</h3>

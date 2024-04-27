@@ -9,7 +9,7 @@ const JoinService = () => {
                     <h2 className='service-innovation-title-header'>Values that <span> shape us</span></h2>
                     <p className='service-innovation-title-desc'>Our values are not just words on paper – they're the beating heart of who we are. They define our vibrant culture and guide us in everything we do.</p>
                </div>
-               <div className="service-innovation-row">
+               <div className="service-innovation-row js-scroll fade-in">
                     <div className="service-innovation-col">
                          <span className='service-innovation-icon'><MdEmojiEmotions fontSize={30} /></span>
                          <h3>Customer Focuslearning</h3>

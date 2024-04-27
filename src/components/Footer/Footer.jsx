@@ -8,7 +8,7 @@ const Footer = () => {
     return (
         <div className='footer'>
             <div className="container footer1">
-                <div className="footer_subscription">
+                <div className="footer_subscription js-scroll fade-in">
                     <span className='title_sub'>Stay in the loop</span>
                     <div className="sub_form">
                         <input type='email' placeholder='Your email address' />
@@ -18,10 +18,10 @@ const Footer = () => {
                 <hr className='line' />
                 <div className="footer__menu">
                     <div className="row">
-                        <div className="col-lg-3">
+                        <div className="col-lg-3 js-scroll fade-in">
                             <img src={lf_logo_white} alt="lf_logo_white" className='footer_logo' />
                         </div>
-                        <div className="col-lg-3">
+                        <div className="col-lg-3 js-scroll fade-in">
                             <div className="footer_block">
                                 <h3 className="footer_title">We are TopaBhumi</h3>
                                 <ul>
@@ -42,7 +42,7 @@ const Footer = () => {
                                 </ul>
                             </div>
                         </div>
-                        <div className="col-lg-3">
+                        <div className="col-lg-3 js-scroll fade-in">
                             <div className="footer_block">
                                 <h3 className="footer_title">What We Do</h3>
                                 <ul>
@@ -60,7 +60,7 @@ const Footer = () => {
                                 </ul>
                             </div>
                         </div>
-                        <div className="col-lg-3">
+                        <div className="col-lg-3 js-scroll fade-in">
                             <div className="footer_block">
                                 <h3 className="footer_title">Connect with Us</h3>
                                 <ul>
@@ -81,7 +81,7 @@ const Footer = () => {
                     </div>
                 </div>
                 <hr className='line' />
-                <div className="footer__copyright">
+                <div className="footer__copyright js-scroll fade-in">
                     <img src={footer_button} alt="footer_button" className='footer_button' />
                     <p className='footer_copyright_text'>Copyright, TopaBhumi Technology Inc. </p>
                     <ul>

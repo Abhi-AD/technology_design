@@ -14,7 +14,7 @@ const Casestudy = () => {
                     <p className="casestudy-title-desc1">Since 2010, we've had over 100 fast-growing companies build apps, data-driven products, and cloud solutions that make an impact.</p>
                </div>
                <div className="col_case">
-                    <div className="card_case">
+                    <div className="card_case js-scroll fade-in">
                          <img src={Signetic} alt="Signetic1" />
                          <div className="casestudy-card">
                               <img src={Signetic_title} alt="Signetic_title" />
@@ -29,7 +29,7 @@ const Casestudy = () => {
                          </div>
 
                     </div>
-                    <div className="card_case">
+                    <div className="card_case js-scroll fade-in">
                          <img src={Laudio} alt="Laudio" />
                          <div className="casestudy-card">
                               <img src={Laudio_title} alt="Laudio_title" />

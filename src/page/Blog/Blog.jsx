@@ -1,5 +1,6 @@
 import React from 'react'
 import './Blog.css'
+import './AnimateOnScroll.css'
 import { BlogHeader1, BlogHeader2, Blog1, Blog2, Blog3, Blog4, Blog5, Blog6 } from './imports'
 import { Category, Pagination } from '../../components/index'
 import { FaArrowRight } from 'react-icons/fa'
@@ -11,7 +12,7 @@ const Blog = () => {
         <h1 className='title_blog'>Blog insights</h1>
         <div className="row_blog">
           <div className="BlogHeader">
-            <img src={BlogHeader1} alt="BlogHeader1" />
+            <img src={BlogHeader1} alt="BlogHeader1" className=' js-scroll fade-in' />
             <div className="post_card__infoys">
               <div className="post_date"><span>march 29, 2024</span></div>
               <h2 className="blog_title">Decoding Software Engineering fellowship: FAQs and tips</h2>
@@ -23,7 +24,7 @@ const Blog = () => {
             </div>
           </div>
           <div className="BlogHeader">
-            <img src={BlogHeader2} alt="BlogHeader2" />
+            <img src={BlogHeader2} alt="BlogHeader2" className=' js-scroll fade-in' />
             <div className="post_card__infoys">
               <div className="post_date"><span>march 29, 2024</span></div>
               <h2 className="blog_title">Internship to Fellowship - Jumpstart your career with us!                </h2>
@@ -36,7 +37,7 @@ const Blog = () => {
         </div>
         <div className="col_blog">
           <div className="card_blog">
-            <img src={Blog1} alt="Blog1" />
+            <img src={Blog1} alt="Blog1" className=' js-scroll fade-in' />
             <div className="post_card__infoys">
               <div className="post_date"><span>march 29, 2024</span></div>
               <h2 className="blog_title">Decoding Software Engineering fellowship: FAQs and tips</h2>
@@ -48,7 +49,7 @@ const Blog = () => {
             </div>
           </div>
           <div className="card_blog">
-            <img src={Blog2} alt="Blog2" />
+            <img src={Blog2} alt="Blog2" className=' js-scroll fade-in' />
             <div className="post_card__infoys">
               <div className="post_date"><span>march 29, 2024</span></div>
               <h2 className="blog_title">Internship to Fellowship - Jumpstart your career with us!                </h2>
@@ -59,7 +60,7 @@ const Blog = () => {
             </div>
           </div>
           <div className="card_blog">
-            <img src={Blog3} alt="Blog3" />
+            <img src={Blog3} alt="Blog3" className=' js-scroll fade-in' />
             <div className="post_card__infoys">
               <div className="post_date"><span>march 29, 2024</span></div>
               <h2 className="blog_title">Decoding Software Engineering fellowship: FAQs and tips</h2>
@@ -71,7 +72,7 @@ const Blog = () => {
             </div>
           </div>
           <div className="card_blog">
-            <img src={Blog4} alt="Blog3" />
+            <img src={Blog4} alt="Blog3" className=' js-scroll fade-in' />
             <div className="post_card__infoys">
               <div className="post_date"><span>march 29, 2024</span></div>
               <h2 className="blog_title">Internship to Fellowship - Jumpstart your career with us!                </h2>
@@ -82,7 +83,7 @@ const Blog = () => {
             </div>
           </div>
           <div className="card_blog">
-            <img src={Blog5} alt="Blog3" />
+            <img src={Blog5} alt="Blog3" className=' js-scroll fade-in' />
             <div className="post_card__infoys">
               <div className="post_date"><span>march 29, 2024</span></div>
               <h2 className="blog_title">Internship to Fellowship - Jumpstart your career with us!                </h2>
@@ -93,7 +94,7 @@ const Blog = () => {
             </div>
           </div>
           <div className="card_blog">
-            <img src={Blog6} alt="Blog3" />
+            <img src={Blog6} alt="Blog3" className=' js-scroll fade-in' />
             <div className="post_card__infoys">
               <div className="post_date"><span>march 29, 2024</span></div>
               <h2 className="blog_title">Internship to Fellowship - Jumpstart your career with us!                </h2>

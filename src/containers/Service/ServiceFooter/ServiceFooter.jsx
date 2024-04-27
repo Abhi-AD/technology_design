@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 import { FaArrowRight } from 'react-icons/fa'
 const ServiceFooter = () => {
      return (
-          <div className='service-footer'>
+          <div className='service-footer js-scroll fade-in'>
                <div className="service-footer-col">
                     <span className="service-footer-col-title">PRODUCT MANAGEMENT PLAYBOOK</span>
                     <h2 className="service-footer-col-header">Join forces with your customers to build defensible products.</h2>

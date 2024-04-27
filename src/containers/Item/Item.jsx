@@ -5,10 +5,10 @@ import { FaRebel, FaArrowRight, FaCloudversify, FaAirbnb } from "react-icons/fa"
 import { Link } from 'react-router-dom'
 import { product } from './imports';
 const Item = () => {
-    const [activeTab, setActiveTab] = useState('London');
+    const [activeTab, setActiveTab] = useState('Products');
 
-    const openCity = (cityName) => {
-        setActiveTab(cityName);
+    const openItem = (itemname) => {
+        setActiveTab(itemname);
     };
     return (
         <div className='service'>
@@ -16,42 +16,42 @@ const Item = () => {
                 <ul className="tab-header__list">
                     <li className='tab-item'>
                         <Link
-                            className={activeTab === 'London' ? 'tablinks active' : 'tablinks'}
-                            onClick={() => openCity('London')}>
+                            className={activeTab === 'Products' ? 'tablinks active' : 'tablinks'}
+                            onClick={() => openItem('Products')}>
                             <span className='tab-header__item'>
                                 <FaRebel className='item_icon' />
-                                <span className="tab-text">London</span>
+                                <span className="tab-text">Products</span>
                             </span>
                         </Link>
                     </li>
                     <li className='tab-item'>
                         <Link
-                            className={activeTab === 'Paris' ? 'tablinks active' : 'tablinks'}
-                            onClick={() => openCity('Paris')}
+                            className={activeTab === 'Team' ? 'tablinks active' : 'tablinks'}
+                            onClick={() => openItem('Team')}
                         >
                             <span className='tab-header__item'>
                                 <FaCloudversify className='item_icon' />
-                                <span className="tab-text">Paris </span>
+                                <span className="tab-text">Team </span>
                             </span>
                         </Link>
                     </li>
                     <li className='tab-item'>
                         <Link
-                            className={activeTab === 'Tokyo' ? 'tablinks active' : 'tablinks'}
-                            onClick={() => openCity('Tokyo')}
+                            className={activeTab === 'Design' ? 'tablinks active' : 'tablinks'}
+                            onClick={() => openItem('Design')}
                         >
                             <span className='tab-header__item'>
                                 <FaAirbnb className='item_icon' />
-                                <span className="tab-text">Tokyo</span>
+                                <span className="tab-text">Design</span>
                             </span>
                         </Link>
                     </li>
                 </ul>
             </div>
             <div className="tab-content">
-                <div id="London" className="tab-card" style={{ display: activeTab === 'London' ? 'block' : 'none' }}>
+                <div id="Products" className="tab-card" style={{ display: activeTab === 'Products' ? 'block' : 'none' }}>
                     <div className="tab-card-col-left">
-                        <span className='tab-card-col-title'>Londan</span>
+                        <span className='tab-card-col-title'>Products</span>
                         <h2 className='tab-card-col-header'><span>Delive,</span> not just products</h2>
                         <p className='tab-card-col-des'>Build digital experiences people love to use. Learn how we use battle-tested processes to systematically design and develop software that solves problems, delights users, and optimizes businesses.</p>
                         <div className="parnter_icon">
@@ -63,9 +63,9 @@ const Item = () => {
                         <img src={product} alt="product" />
                     </div>
                 </div>
-                <div id="Paris" className="tab-card" style={{ display: activeTab === 'Paris' ? 'block' : 'none' }}>
+                <div id="Team" className="tab-card" style={{ display: activeTab === 'Team' ? 'block' : 'none' }}>
                     <div className="tab-card-col-left">
-                        <span className='tab-card-col-title'>Paris</span>
+                        <span className='tab-card-col-title'>Team</span>
                         <h2 className='tab-card-col-header'><span>Delive,</span> not just products</h2>
                         <p className='tab-card-col-des'>Build digital experiences people love to use. Learn how we use battle-tested processes to systematically design and develop software that solves problems, delights users, and optimizes businesses.</p>
                         <div className="parnter_icon">
@@ -77,9 +77,9 @@ const Item = () => {
                         <img src={product} alt="product" />
                     </div>
                 </div>
-                <div id="Tokyo" className="tab-card" style={{ display: activeTab === 'Tokyo' ? 'block' : 'none' }}>
+                <div id="Design" className="tab-card" style={{ display: activeTab === 'Design' ? 'block' : 'none' }}>
                     <div className="tab-card-col-left">
-                        <span className='tab-card-col-title'>Tokyo</span>
+                        <span className='tab-card-col-title'>Design</span>
                         <h2 className='tab-card-col-header'><span>Delive,</span> not just products</h2>
                         <p className='tab-card-col-des'>Build digital experiences people love to use. Learn how we use battle-tested processes to systematically design and develop software that solves problems, delights users, and optimizes businesses.</p>
                         <div className="parnter_icon">
