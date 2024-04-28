@@ -1,10 +1,15 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './Contact.css'
 import Location from '../../containers/Location/Location'
 import contact from '../../assests/img/contact.png'
-import { FaAngleDown, FaArrowRight, FaTeamspeak, FaUserFriends } from 'react-icons/fa'
+import { FaArrowRight, FaTeamspeak, FaUserFriends } from 'react-icons/fa'
 import { AiOutlineTeam } from "react-icons/ai";
 const Contact = () => {
+  const [selectedCountry, setSelectedCountry] = useState('volvo');
+
+  const handleCountryChange = (event) => {
+    setSelectedCountry(event.target.value);
+  };
   return (
     <div>
       <div className="contact">
@@ -17,7 +22,7 @@ const Contact = () => {
 
         <div className="contact_form">
           <div className="contact_form-left">
-            <img src={contact} alt="contact"  className='js-scroll fade-in'/>
+            <img src={contact} alt="contact" className='js-scroll fade-in' />
             <div className="vacancy">
               <h2 className='vacancy_title'>Looking for a job?</h2>
               <p className="vacancy_desc">There is always an exciting position open that you can apply right away. Don't worry even if there's not something that suits you imme</p>
@@ -108,10 +113,11 @@ const Contact = () => {
               <div className="form__group">
                 <label>What is your phone number?</label>
                 <div className="number">
-                  <div className="country">
-                    <span>United States</span>
-                    <FaAngleDown className='country_arrow' size={24} />
-                  </div>
+                  <select className="country" value={selectedCountry} onChange={handleCountryChange}>
+                    <option value="nepal">Nepal</option>
+                    <option value="india">India</option>
+                    <option value="usa">USA</option>
+                  </select>
                   <input type="text" placeholder='Enter Your number' />
                 </div>
               </div>
