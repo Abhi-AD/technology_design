@@ -1,5 +1,6 @@
 import React from 'react'
 import './VisitCard.css'
+import CardDesign from './CardDesign'
 
 const VisitCard = () => {
      return (
@@ -65,6 +66,8 @@ const VisitCard = () => {
 
                     </ul>
                </div>
+
+               <CardDesign/>
 
 
           </div>

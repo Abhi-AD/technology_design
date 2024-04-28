@@ -93,7 +93,8 @@
      }
      .technology__header-link-btn {
        margin-bottom: 10%;
-       flex-direction: column;
+       flex-direction: row;
+       gap: 10rem;
      }
      .centered-link {
        padding-left: 0;
