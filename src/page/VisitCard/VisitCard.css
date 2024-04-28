@@ -140,49 +140,26 @@
 
 
 
+@media screen and (max-width:768px) {
+     .visit-card {
+          flex-direction: column;
+          padding: 1rem;
+     }
 
+     .visit-card-form {
+          padding: 1rem;
+          flex-direction: column;
+          width: auto;
+     }
 
+     .visit-card-form-section {
+          padding: 1rem;
+     }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+     .visit-card-forms-section-data {
+          margin: 1px;
+          gap: 0rem;
+          display: flex;
+          align-items: center;
+     }
+}
