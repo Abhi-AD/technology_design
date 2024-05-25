@@ -1,4 +1,3 @@
-import React from 'react';
 import './Connect.css';
 import { FaArrowRight } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
@@ -14,7 +13,7 @@ const Connect = () => (
                               You need to move faster. You have napkin sketches that need to be fleshed out and realized. You need to reinvent your business to compete.
                          </p>
                          <p className='connect__row-card-infoys-des-button'>
-                              We bring startup speed and agility, and enterprise quality and scale. We'd love to learn and share more.
+                              We bring startup speed and agility, and enterprise quality and scale. We&apos;d love to learn and share more.
                          </p>
                     </div>
                     <div className='connect__row-card-button'>
@@ -31,7 +30,7 @@ const Connect = () => (
                               You are excited by emerging technology. You dream about building new things alongside great companies. You are driven to be a master of your craft.
                          </p>
                          <p className='connect__row-card-infoys-des-button'>
-                              We bring brilliant like-minded peers to innovate, learn, and grow with. Let's connect.
+                              We bring brilliant like-minded peers to innovate, learn, and grow with. Let&apos;s connect.
                          </p>
                     </div>
                     <div className='connect__row-card-button'>

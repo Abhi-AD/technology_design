@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import './Category.css'
 import { FaSearch, FaTimes } from "react-icons/fa";
 import { Link } from 'react-router-dom'

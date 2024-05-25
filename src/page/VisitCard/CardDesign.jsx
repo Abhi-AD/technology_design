@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import { useRef } from 'react';
 import './CardDesign.css';
 import { FaDownload } from "react-icons/fa";
 import QR from '../../assests/img/QR.png';

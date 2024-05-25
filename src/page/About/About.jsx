@@ -1,4 +1,3 @@
-import React from 'react'
 import './About.css'
 import { BOx, Hero, Mission, Panel, People, World } from '../../containers/index'
 import { Connect } from '../../components/index'

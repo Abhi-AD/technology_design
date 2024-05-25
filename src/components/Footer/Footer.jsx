@@ -1,4 +1,3 @@
-import React from 'react';
 import './Footer.css';
 import { footer_button, lf_logo_white } from './imports';
 import { FaCodeBranch, FaFacebook, FaGraduationCap, FaInstagram, FaLinkedin, FaPodcast, FaUserFriends } from 'react-icons/fa';

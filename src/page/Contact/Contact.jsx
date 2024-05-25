@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import './Contact.css'
 import Location from '../../containers/Location/Location'
 import contact from '../../assests/img/contact.png'
@@ -15,8 +15,8 @@ const Contact = () => {
       <div className="contact">
         <div className="contact_header">
           <h1 className="contact_title">contact us</h1>
-          <p className="contact_des">Let's build  <span>together</span></p>
-          <p className="desc_contact">Whether you're a startup trying to launch a business or an enterprise looking to scale up, there's definitely something we can do for you.</p>
+          <p className="contact_des">Let&apos;s build  <span>together</span></p>
+          <p className="desc_contact">Whether you&apos;re a startup trying to launch a business or an enterprise looking to scale up, there&apos;s definitely something we can do for you.</p>
         </div>
 
 
@@ -25,7 +25,7 @@ const Contact = () => {
             <img src={contact} alt="contact" className='js-scroll fade-in' />
             <div className="vacancy">
               <h2 className='vacancy_title'>Looking for a job?</h2>
-              <p className="vacancy_desc">There is always an exciting position open that you can apply right away. Don't worry even if there's not something that suits you imme</p>
+              <p className="vacancy_desc">There is always an exciting position open that you can apply right away. Don&apos;t worry even if there&apos;s not something that suits you imme</p>
               <div className="apply_now">
                 <span style={{ paddingRight: '10px' }}>apply now</span>
                 <FaArrowRight className='fa' />
@@ -56,7 +56,7 @@ const Contact = () => {
                 <label>Your email address</label>
                 <input type='text' placeholder='eg.you@example.con' />
                 <hr />
-                <p>We won't send you spam.</p>
+                <p>We won&apos;t send you spam.</p>
               </div>
               <div className="form__group">
                 <label>How do you want to work with us?</label>
@@ -79,7 +79,7 @@ const Contact = () => {
                   <FaTeamspeak className='button__icon' size={30} />
                   <div className="button__radio-content">
                     <label>I want a dedicated team for my project</label>
-                    <p>Your goal for excellence is our team's focus</p>
+                    <p>Your goal for excellence is our team&apos;s focus</p>
                   </div>
                 </button>
               </div>

@@ -1,25 +1,27 @@
-import React, { useState, useRef, useEffect } from 'react';
+import { useState, useRef, useEffect } from 'react';
+import PropTypes from 'prop-types'; // Import PropTypes
 import './Navbar.css';
 import logo from '../../assests/travel logo.png';
 import { Link } from 'react-router-dom';
 import { PiRectangleThin } from 'react-icons/pi';
-import { RiMenu3Line, RiCloseLine } from 'react-icons/ri'
+import { RiMenu3Line, RiCloseLine } from 'react-icons/ri';
 
-const Menu = ({ isServiceOpen, isJoinOpen, toggleService, toggleJoin,toggleMenu }) => {
+const Menu = ({ isServiceOpen, isJoinOpen, toggleService, toggleJoin, toggleMenu }) => {
+     const node = useRef();
+
      const handleClickOutside = (event) => {
           if (node.current && !node.current.contains(event.target)) {
                toggleService(false);
                toggleJoin(false);
-               toggleMenu(false)
+               toggleMenu(false);
           }
      };
-     
+
      const handleNavLinkClick = () => {
           toggleService(false);
           toggleJoin(false);
           toggleMenu(false);
      };
-
 
      useEffect(() => {
           document.addEventListener('mousedown', handleClickOutside);
@@ -27,8 +29,6 @@ const Menu = ({ isServiceOpen, isJoinOpen, toggleService, toggleJoin,toggleMenu 
                document.removeEventListener('mousedown', handleClickOutside);
           };
      });
-
-     const node = useRef();
 
      return (
           <>
@@ -85,7 +85,7 @@ const Menu = ({ isServiceOpen, isJoinOpen, toggleService, toggleJoin,toggleMenu 
                               </div>
                          )}
                     </li>
-                     <li key="blog">
+                    <li key="blog">
                          <Link className='navbar-link' to={`/blog`} onClick={handleNavLinkClick}>Blog</Link>
                     </li>
                     <li key="about">
@@ -94,7 +94,15 @@ const Menu = ({ isServiceOpen, isJoinOpen, toggleService, toggleJoin,toggleMenu 
                </ul>
           </>
      )
-}
+};
+
+Menu.propTypes = {
+     isServiceOpen: PropTypes.bool.isRequired,
+     isJoinOpen: PropTypes.bool.isRequired,
+     toggleService: PropTypes.func.isRequired,
+     toggleJoin: PropTypes.func.isRequired,
+     toggleMenu: PropTypes.func.isRequired,
+};
 
 const Button = () => (
      <>
@@ -115,13 +123,12 @@ const Button = () => (
                </Link>
           </div>
      </>
-)
+);
 
 const Navbar = () => {
      const [isServiceOpen, setIsServiceOpen] = useState(false);
      const [isJoinOpen, setIsJoinOpen] = useState(false);
      const [toggleMenu, setToggleMenu] = useState(false);
-
 
      const toggleService = (isOpen) => {
           setIsServiceOpen(isOpen);
@@ -153,8 +160,8 @@ const Navbar = () => {
 
                <div className="header-small">
                     {toggleMenu
-                         ? <RiCloseLine color='#000' size={28} onClick={(e) => setToggleMenu(false)} />
-                         : <RiMenu3Line color='#000' size={28} onClick={(e) => setToggleMenu(true)} />
+                         ? <RiCloseLine color='#000' size={28} onClick={() => setToggleMenu(false)} />
+                         : <RiMenu3Line color='#000' size={28} onClick={() => setToggleMenu(true)} />
                     }
                     {toggleMenu && (
                          <div className='header-phone'>
@@ -166,14 +173,13 @@ const Navbar = () => {
                                    isJoinOpen={isJoinOpen}
                                    toggleService={toggleService}
                                    toggleJoin={toggleJoin}
-                                   toggleMenu= {setToggleMenu}
+                                   toggleMenu={setToggleMenu}
                                    className="menu" />
                               <Button />
                          </div>
                     )}
                </div>
           </div>
-
      );
 };
 

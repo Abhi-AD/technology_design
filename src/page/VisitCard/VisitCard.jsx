@@ -1,4 +1,3 @@
-import React from 'react'
 import './VisitCard.css'
 import CardDesign from './CardDesign'
 

@@ -1,4 +1,3 @@
-import React from 'react'
 import { ServiceAbout, ServiceFooter, ServiceHeader, ServiceInnovation, ServiceWork } from '../../containers/index'
 
 const Services = () => {

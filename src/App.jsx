@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import { useEffect } from 'react'
 import { Route, BrowserRouter as Router, Routes } from 'react-router-dom'
 import { Navbar, Footer, ScrollToTopButton } from './components/index'
 import { Home, Services, Join, Blog, About, Contact, VisitCard } from './page/imports'

@@ -1,4 +1,3 @@
-import React from 'react';
 import './Gallery.css';
 import { gallery1, gallery2, gallery3, gallery4, gallery5 } from './import'
 

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import './Termional.css'; // Import your CSS file
 import { person1, person2 } from './import';
 import { RiDoubleQuotesR } from 'react-icons/ri';

@@ -1,7 +1,7 @@
 export {default as Navbar} from './Navbar/Navbar'
 export{default as Brand} from './Brand/Brand'
 export {default as Footer} from './Footer/Footer'
-export {default as CTA} from './CTA/CTA'
+export {default as CTAs} from './CTA/CTA'
 export {default as Connect} from './Connect/Connect'
 export {default as Gallery} from './Gallery/Gallery'
 export {default as Termional} from './Termional/Termional'

@@ -1,4 +1,3 @@
-import React from 'react'
 import './CTA.css'
 import { FaArrowRight, FaFilePdf } from 'react-icons/fa';
 
@@ -6,13 +5,14 @@ import design_discovery from '../../assests/img/design-discovery.png'
 import invincible_approach from '../../assests/img/invincible-approach.png'
 import devops from '../../assests/img/devops.png'
 
-const CTA = () => {
+
+export default function CTA() {
      return (
           <div className='section-panel cta_padding'>
                <div className="container CTA1">
                     <div className="section-title">
                          <h2>See what <span className='section_title_base'>we are thinking</span></h2>
-                         <p className='fs-lead'>We're not just doers, we're tinkerers and thinkers obsessed with building new things in better ways. Read some of
+                         <p className='fs-lead'>We&apos;re not just doers, we&apos;re tinkerers and thinkers obsessed with building new things in better ways. Read some of
                               our insights,
                               download our playbooks
                          </p>
@@ -44,5 +44,3 @@ const CTA = () => {
           </div>
      )
 }
-
-export default CTA

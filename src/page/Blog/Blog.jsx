@@ -1,4 +1,3 @@
-import React from 'react'
 import './Blog.css'
 import './AnimateOnScroll.css'
 import { BlogHeader1, BlogHeader2, Blog1, Blog2, Blog3, Blog4, Blog5, Blog6 } from './imports'
